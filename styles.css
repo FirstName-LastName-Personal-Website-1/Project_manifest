@@ -2,8 +2,13 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(https://tse1.mm.bing.net/th?id=OIP.pwdsxK__r59yYUU4_yorzAHaEK&pid=Api&P=0) no-repeat;
+    /* background: url(https://tse1.mm.bing.net/th?id=OIP.pwdsxK__r59yYUU4_yorzAHaEK&pid=Api&P=0) no-repeat; */
     background-size: cover;
+}
+
+.background-picture{
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .home_page{
@@ -53,17 +58,18 @@ body.page-1 {
             
         }
 .about_me{
-    padding-inline: 20px;
-    width: fit-content;
-    block-size: fit-content;
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); */
-   /* display: flex;*/
-    justify-content: center;
-    align-items: center;
-    /* min-height: 100vh; */
+     padding-inline: 20px; 
+     width: fit-content;
+    block-size: fit-content; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+   display: flex;
+     justify-content: center;
+    align-items: center; 
+     min-height: 100vh; 
     background-color: brown;
-    /* margin-top: -79px; */
+     margin-top: -79px; 
+    
 
 }
 
@@ -104,9 +110,9 @@ body.page-1 {
     background-color: chartreuse;
     border-radius: 19px;
     font-size: 78px
-    position: relative;
+    /* position: relative;
     left: 144px;
-    top: -84px;
+    top: -84px; */
 }
 /*what I do in a day*/
 
