@@ -31,9 +31,14 @@ body {
 }
 
 .selection{
-    font-size: 15px;
+    font-size: 19px;
+    position: relative;
+    top: -94px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.selection1{
+  font-size: 15px;
 }
 a:link { text-decoration: none;}
 a:hover{text-decoration: underline;}
@@ -58,8 +63,13 @@ body.page-1 {
             
         }
 .about_me{
-     padding-inline: 20px; 
-     width: fit-content;
+      display: grid;
+      place-items: center;
+     padding-inline: 70px;
+     border: red;
+     border-radius: 9px;
+     padding-bottom: -90px 20vw; 
+     /* width: fit-content;
     block-size: fit-content; 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -69,7 +79,7 @@ body.page-1 {
      min-height: 100vh; 
     background-color: brown;
      margin-top: -79px; 
-    
+     */
 
 }
 
@@ -78,12 +88,11 @@ body.page-1 {
     justify-content: right;
 }
 .arizona{
-    position: relative;
-    left: -233px;
-    margin: 150px auto;
-    width:70%;
-    font-size:30px ;
-
+   
+  max-width: 50rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  background: orange;
 } 
 .arizona_pic{
     width: 300px;
@@ -92,19 +101,20 @@ body.page-1 {
     border: 3px black solid;
     margin-right: 5px;
     position: relative;
-    right: -343px;
+    right: 30px;
 }
 
 .arizona h1{
+    align-content: center;
     font-size: 32px;
-    position: relative;
-    right:82px;
+    
 }
 
 .arizona p {
     font-size: 17px;
+    align-content: center;
     position: relative;
-    right:-373px;
+    
 }
 .arizona_link{
     background-color: chartreuse;
@@ -124,12 +134,9 @@ body.page-1 {
 }
 
 .amazon{
-    position: relative;
-    left: 423px;
-    top: -304px;
-    margin: 150px auto;
-    width:70%;
-    font-size:17px ;
+    align-content: center;
+    font-size:17px;
+    background: darkgreen;
 }
 
 .fighter{
@@ -193,9 +200,9 @@ body.page-1 {
   }
   .hvr-wobble-horizontal {
     position: relative;
-    left: -123px;
+    left: -90px;
     top: -22px;
-    width: 200px;
+    width: 300px;
     border-radius: 15px;
     display: inline-block;
     vertical-align: middle;
@@ -213,6 +220,7 @@ body.page-1 {
     -webkit-animation-iteration-count: 2;
     animation-iteration-count: 2;
   }
+  
   /*third topic "Pursuing goals*/
 .perfection{
     position: relative;
@@ -224,8 +232,8 @@ body.page-1 {
     left: -233px;
     margin: 150px auto;
     width:70%;
-    font-size:17px ;
-
+    font-size:17px;
+  
 } 
 .coding_pic{
     width: 500px;
@@ -236,19 +244,19 @@ body.page-1 {
 }
 
 .rich_ken{
-    width: 350px;
+    width: 360px;
     border-radius: 25%;
     position: relative;
-    left: 744px;
-    bottom: 375px;
+    left: 276px;
+    bottom: -95px;
 }
 
 .bull_market{
     width: 450px;
     border-radius: 25%;
     position: relative;
-    left: 1164px;
-    bottom: 745px;
+    left: 204px;
+    bottom: 275px;
     opacity: 100%;
 }
 .bull_market:hover{
@@ -259,20 +267,78 @@ body.page-1 {
     align-content: center;
 }
 /*Porfolio*/
-body.page-2 {
-  background-color: brown;
-  
-}
-.project_c{
-    display: grid;
-    justify-content: center;
+
+::before,::after{
+  box-sizing: border-box;
 }
 
-h3 {
+
+body.page-2 {
+  background-color: black;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.25em;
+  line-height: 1.5em;
+
+}
+.portfolio_c{
+    --skew-angle: 5deg;
+    position: relative;
+    isolation: isolate;
+    
+}
+.portfolio_c::after {
+    content: '';
+    background-image:linear-gradient(
+      45deg, #12c2E9, #c471ed, #f64f59
+    );    
+    position: absolute;
+    z-index: -1;
+    inset:0;
+    transform: skewY(var(--skew-angle));
+    
+}
+.wrapper {
+  max-width: 50rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.quote {
+  position: relative;
+  top: -800px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;;
 
 }
 .container{
-  display: grid;
-  justify-content: center;
+ font-size: 2rem;
+ text-align: center;
 }
+.section-title{
+  font-size: 2.25rem;
+}
+.footer{
+  display: grid;
+  justify-content: space-between;
+  position: relative;
+  top: -905px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  color: black;
+
+}
+
+section{
+  padding-block: 5rem;
+  
+}
+.header_center{
+      text-decoration: underline;
+      text-align: center;
+      padding-bottom:113px;
+      
+}
+
+
+   
